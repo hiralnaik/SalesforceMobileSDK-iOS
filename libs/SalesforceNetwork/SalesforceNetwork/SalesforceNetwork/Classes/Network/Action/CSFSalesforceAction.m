@@ -62,6 +62,7 @@ static NSString inline * CSFSalesforceErrorMessage(NSDictionary *errorDict) {
 
 - (void)dealloc {
     self.enqueuedNetwork = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)setEnqueuedNetwork:(CSFNetwork *) network {
