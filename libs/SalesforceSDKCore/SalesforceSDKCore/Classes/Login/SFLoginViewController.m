@@ -93,20 +93,20 @@
 #pragma mark - Setup Navigation bar
 
 - (void)setupNavigationBar {
-    self.navBar = [[UINavigationBar alloc] initWithFrame:CGRectZero];
-    
-    NSString *title = [SFSDKResourceUtils localizedString:@"TITLE_LOGIN"];
-    // setup top item
-    UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:title];
-    self.navBar.items = @[item];
-    
-    // setup right bar button
-    UIImage *image = [SFSDKResourceUtils imageNamed:@"login-window-gear"];
-    self.navBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(showLoginHost:)];
-    self.navBar.tintColor = [UIColor whiteColor];
-    [self styleNavigationBar:self.navBar];
-    [self.view addSubview:self.navBar];
-    [self setNeedsStatusBarAppearanceUpdate];
+//    self.navBar = [[UINavigationBar alloc] initWithFrame:CGRectZero];
+//    
+//    NSString *title = [SFSDKResourceUtils localizedString:@"TITLE_LOGIN"];
+//    // setup top item
+//    UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:title];
+//    self.navBar.items = @[item];
+//    
+//    // setup right bar button
+//    UIImage *image = [SFSDKResourceUtils imageNamed:@"login-window-gear"];
+//    self.navBar.topItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:@selector(showLoginHost:)];
+//    self.navBar.tintColor = [UIColor whiteColor];
+//    [self styleNavigationBar:self.navBar];
+//    [self.view addSubview:self.navBar];
+//    [self setNeedsStatusBarAppearanceUpdate];
 }
 
 - (void)setupBackButton {
